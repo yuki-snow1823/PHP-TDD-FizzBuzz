@@ -33,4 +33,10 @@ class FizzBuzzTest extends TestCase
         $this->assertEquals($data, 'Buzz');
     }
 
+    public function test__15の倍数を入力したらFizzと返して出力する() {
+        $fizzBuzz = new FizzBuzz();
+        $data = $fizzBuzz->main(15);
+        $this->assertEquals($data, 'FizzBuzz');
+    }
+
 }
