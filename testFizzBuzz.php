@@ -13,6 +13,7 @@ class FizzBuzzTest extends TestCase
     //     $stack = [];
     //     $this->assertEquals(0, count($stack));
     // }
+    
 
     public function test__数字が入力されたら文字を返す() {
         $fizzBuzz = new FizzBuzz();
