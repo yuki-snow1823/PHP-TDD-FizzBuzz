@@ -1,12 +1,18 @@
 <?php
-class FizzBuzz 
+namespace FizzBuzz;
+
+class FizzBuzz
 {
-  public function returnString() {
+  public function returnString()
+  {
     return 'hoge';
   }
 
-  public function fizzBuzz() {
-    return "Fizz";
+  public function main($number)
+  {
+    if ($number % 3 == 0) {
+      return "Fizz";
+    }
   }
 }
 ?>

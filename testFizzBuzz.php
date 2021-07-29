@@ -22,7 +22,7 @@ class FizzBuzzTest extends TestCase
 
     public function test__3の倍数を入力したらFizzと返して出力する() {
         $fizzBuzz = new FizzBuzz();
-        $data = $fizzBuzz->fizzBuzz(3);
+        $data = $fizzBuzz->main(3);
         $this->assertEquals($data, 'Fizz');
     }
 }
