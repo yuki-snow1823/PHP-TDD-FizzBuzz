@@ -1,13 +1,13 @@
 <?php
-require './fizzBuzz.php';
 
+namespace FizzBuzzTest;
 use PHPUnit\Framework\TestCase;
-
+use fizzBuzz\FizzBuzz;
+require './fizzBuzz.php';
 
 class FizzBuzzTest extends TestCase
 {
-    public $fizzBuzz;
-
+    
     // public function test__テストが正常に動くかのテスト()
     // {
     //     $stack = [];
@@ -25,4 +25,11 @@ class FizzBuzzTest extends TestCase
         $data = $fizzBuzz->main(3);
         $this->assertEquals($data, 'Fizz');
     }
+
+    public function test__5の倍数を入力したらFizzと返して出力する() {
+        $fizzBuzz = new FizzBuzz();
+        $data = $fizzBuzz->main(5);
+        $this->assertEquals($data, 'Buzz');
+    }
+
 }

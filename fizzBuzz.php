@@ -11,8 +11,11 @@ class FizzBuzz
   public function main($number)
   {
     if ($number % 3 == 0) {
-      return "Fizz";
+      return 'Fizz';
+    } elseif ($number % 5 == 0) {
+      return 'Buzz';
     }
   }
 }
+
 ?>
