@@ -3,9 +3,10 @@ require './fizzBuzz.php';
 
 use PHPUnit\Framework\TestCase;
 
+
 class FizzBuzzTest extends TestCase
 {
-    $fizzBuzz = new FizzBuzz();
+    public $fizzBuzz;
 
     // public function test__テストが正常に動くかのテスト()
     // {
@@ -14,7 +15,8 @@ class FizzBuzzTest extends TestCase
     // }
 
     public function test__数字が入力されたら文字を返す(){
-        $data = returnString();
-        assertEquals($data, "hoge");
+        $fizzBuzz = new FizzBuzz();
+        $data = $fizzBuzz->returnString();
+        $this->assertEquals($data, "hoge");
     }
 }
